@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b In:
+  = @log.in
+%p
+  %b Out:
+  = @log.out
+
+= link_to 'Edit', edit_log_path(@log)
+\|
+= link_to 'Back', logs_path

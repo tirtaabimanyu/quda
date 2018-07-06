@@ -1,0 +1,6 @@
+%h1= @user.name
+.container
+  - @jobs.each do |job|
+    %p= link_to job.name, job_path(job)
+%p= link_to "Add new job", new_job_path
+%p= link_to "Sign out", destroy_user_session_path, method: :delete

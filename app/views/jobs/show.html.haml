@@ -1,0 +1,20 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @job.name
+%p
+  %b Target:
+  = @job.target
+%p
+  %b Current:
+  = @job.current
+%p
+  %b Status:
+  = @job.status
+
+= link_to 'Toggle', job_toggle_path(@job), method: :post
+\|
+= link_to 'Edit', edit_job_path(@job)
+\|
+= link_to 'Back', me_index_path

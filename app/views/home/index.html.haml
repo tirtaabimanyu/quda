@@ -1,1 +1,10 @@
-= link_to "Sign in with Google", user_google_oauth2_omniauth_authorize_path
+.row
+  .col.mb-4.mt-3
+    .text-center
+      %img{ src: 'https://www.bukalapak.com/apple-touch-icon-114x114-precomposed.png' }
+
+.card.mx-auto{:style => "width: 24rem;"}
+  .card-body
+    %h5.card-title.text-center Selamat hari jumat!
+    %p.card-text.text-center Silakan masuk ke Suelle dengan menggunakan email Bukalapak
+    = link_to 'Masuk', user_google_oauth2_omniauth_authorize_path, class: 'btn btn-success btn-block card-link'
